@@ -1,0 +1,171 @@
+/* @override 
+	http://localhost:8000/theme/css/ingoresearch.css */
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    line-height: 1.7em;
+    color: #000000;
+    font-size: 13px;
+    font-family: 'Source Sans Pro', 'source-sans-pro', sans-serif;
+    font-weight: 400;
+}
+
+body.home {
+    background-color: #00529b;
+}
+
+a {
+    color: #FF6719;
+    text-decoration: none;
+}
+
+h1 {
+    line-height: 1.2em;
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 800px;
+    margin-bottom: 50px;
+    line-height: 1.6em;
+}
+
+/* @group Header */
+
+.header header {
+    margin: 2em auto 0;
+    max-width: 600px;
+}
+
+.header header img {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+/* @end */
+
+/* @group Nav bar */
+
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+    background: #004c84;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.home-menu {
+    text-align: left;
+}
+
+.home-menu ul {
+    float: right;
+}
+
+.pure-menu-heading {
+    text-transform: none;
+}
+
+.home-menu a,
+.home-menu a:visited {
+    color: #ffffff !important;
+}
+
+.home-menu li a:hover,
+.home-menu li a:focus,
+a.pure-menu-heading:hover {
+    background: none;
+    border: none;
+    color: #FF6719 !important;
+}
+
+/* @end */
+
+/* @group Home page stuff */
+
+.splash-container {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.splash {
+    text-align: center;
+}
+
+.splash h1 {
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.survey-link {
+    background-color: #ffffff;
+    color: #00529b;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    margin: 0.5em 0;
+}
+
+a.survey-link {
+    background-color: #FF6719;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 2em;
+}
+
+a.survey-link:hover {
+   /*background-color: #A7672A;*/
+   background-color: #24b4ed;
+   color: #ffffff;
+}
+
+.splash-content {
+    margin-top: 1em;
+}
+
+.splash-content p {
+    font-size: 1.4em;
+    line-height: 1.3em;
+    margin: 0;
+    padding-bottom: 0.7em;
+}
+
+/* @end */
+
+/* @group Responsive stuff */
+
+/* Phones */
+@media (max-width: 47.999em) {
+    .header header {
+        max-width: 375px;
+    }
+}
+
+/* Tablets and above */
+@media (min-width: 48em) {
+
+    /* Bigger body size */
+    body {
+        font-size: 16px;
+    }
+
+    /* More padding in content area */
+    .content {
+        padding: 1em;
+    }
+
+}
+
+/* Desktops and above */
+@media (min-width: 78em) {
+
+}
+
+/* @end */

@@ -1,0 +1,31 @@
+{% macro github_css() -%}   
+    <style type="text/css">
+        /* The most recent version of Bootstrap does wonky things with heights
+        in the github-box widget (which I blatantly borrowed from the tocify.js
+        project: http://gregfranko.com/jquery.tocify.js/) */        
+        .github-box .github-box-download {
+            height: inherit !important;
+        }
+
+        .github-box .github-stats {
+            height: inherit !important;
+        }
+
+        .github-box .github-box-title h3 {
+            line-height: 1.4em;
+        }
+
+        .github-box p {
+            font-size: 1.1em;
+            line-height: 1.42857143;
+        }
+
+        .github-box {
+            margin: 10px 0px 20px;
+        }
+    </style>
+{%- endmacro %}
+
+{% macro github_js() -%}   
+    <script src="/theme/js/githubrepo.js"></script>
+{%- endmacro %}

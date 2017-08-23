@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+    <h1 class="splash-head">{{ page.title }}</h1>
+    {{ page.content }}
+    <p>
+      <label for="width_regime" 
+             style="display: inline-block; text-align: right">
+             <em>De facto</em> regime openness:
+      </label>
+      <input type="range" min="29" max="600" id="width_regime">
+
+      <label for="width_ingo" 
+             style="display: inline-block; text-align: right; padding-left: 1em;">
+             INGO flexibility:
+      </label>
+      <input type="range" min="29" max="600" id="width_ingo">
+    </p>
+    <div id="simulation"></div>
+
+    <p>The figure below demonstrates the full mix of possible authoritarian regulatory environments and corresponding INGO responses:</p>
+
+    <div class="figure">
+    <img src="/files/img/working_theory.png" alt="Possible authoritarian regulatory environments and corresponding INGO responses" class="pure-img-responsive" />
+    </div>
+</div>
+
+<script src="/files/js/d3.v3.min.js"></script>
+<script src="/files/js/theory.js"></script>
+
+{% endblock %}

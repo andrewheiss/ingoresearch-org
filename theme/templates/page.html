@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% set title = page.title | striptags | escape %}
+
+{% block extra_head %}
+{%- if page.github == "True" %}
+    {{ macros.github_css() }}
+{% endif %}
+{% endblock %}
+
+{% block final_script %}
+{%- if page.github == "True" %}
+    {{ macros.github_js() }}
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<div>
+    <h1>{{ page.title }}</h1>
+    {{ page.content | pure_table }}
+</div>
+
+{% endblock %}

@@ -1,0 +1,5 @@
+# Redirect to www
+RewriteCond %{HTTP_HOST} !^www\.ingoresearch\.org
+RewriteRule (.*) http://www.ingoresearch.org/$1 [R=301,L]
+
+RedirectMatch 301 ^/theory/$ /amicable-contempt/#theory

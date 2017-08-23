@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% set page_class = 'home' %}
+
+{% block content %}
+
+<div class="header">
+    <header>
+        <img src="/files/img/ingo-header-large.png" class="pure-img-responsive">
+    </header>
+</div>
+
+<div class="splash-container">
+    <div class="splash">
+        <h1 class="splash-head">{{ page.title }}</h1>
+        <div class="splash-content">
+            {{ page.content }}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
