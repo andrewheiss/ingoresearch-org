@@ -87,6 +87,12 @@ a.pure-menu-heading:hover {
     color: #FF6719 !important;
 }
 
+/* There's an issue with Firefox (https://github.com/yahoo/pure/issues/644) where having white-space: no-wrap breaks the horizontal menu, so until YUI gets around to releasing the fix, this will do it. */
+.pure-menu-horizontal {
+    width: 100%;
+    white-space: normal !important;      
+}
+
 /* @end */
 
 /* @group Home page stuff */
